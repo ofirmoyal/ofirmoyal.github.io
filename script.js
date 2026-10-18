@@ -16,7 +16,7 @@ filterButtons.forEach((button) => {
       group.hidden =
         language !== "all" && group.dataset.language !== language;
 
-      // Pause videos when their language group is hidden.
+      // Pause videos when their project group is hidden.
       if (group.hidden) {
         group.querySelectorAll("video").forEach((video) => {
           video.pause();
@@ -27,7 +27,7 @@ filterButtons.forEach((button) => {
     if (filterStatus) {
       filterStatus.textContent =
         language === "all"
-          ? "Showing projects in all languages."
+          ? "Showing all automation projects."
           : `Showing ${button.textContent.trim()} projects.`;
     }
   });

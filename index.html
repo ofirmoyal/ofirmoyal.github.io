@@ -51,10 +51,7 @@
         </ul>
         <div class="summary-actions">
   <!-- Place your resume PDF at this path. -->
-<a class="summary-action summary-action-resume"
-   href="assets/resume/Ofir Moyal CV.pdf"
-   target="_blank"
-   rel="noopener noreferrer">
+  <a class="summary-action summary-action-resume" href="assets/resume/Ofir Moyal CV.pdf" download="Ofir-Moyal-CV.pdf">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
     <span>VIEW MY CV</span>
   </a>
@@ -134,13 +131,14 @@
     <section class="container projects" id="projects">
       <p class="eyebrow">03 / PROJECTS</p>
       <h2>🚀 Automation Projects </h2>
-      <p class="section-description">Explore projects by language, then framework.</p>
+      <p class="section-description">Explore automation projects by language, framework, or AI-assisted workflow.</p>
 
-      <div class="filters" role="group" aria-label="Filter projects by language">
-        <button data-filter="all" aria-pressed="true">All languages</button>
+      <div class="filters" role="group" aria-label="Filter automation projects">
+        <button data-filter="all" aria-pressed="true">All projects</button>
         <button data-filter="java" aria-pressed="false">Java</button>
         <button data-filter="python" aria-pressed="false">Python</button>
         <button data-filter="typescript" aria-pressed="false">TypeScript</button>
+        <button data-filter="ai" aria-pressed="false">AI</button>
       </div>
       <p id="filter-status" class="sr-only" role="status"></p>
 
@@ -402,6 +400,62 @@
   </div>
 </div>
               <span class="project-label">TypeScript / Playwright</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="language-group" data-language="ai" aria-labelledby="ai-title">
+        <h2 id="ai-title">AI - Claude Code &amp; Playwright</h2>
+        <div class="framework-group">
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="badge">AI-assisted automation</span>
+              <br><br>
+              <h3>Sauce Demo Storefront</h3>
+              <a href="https://sauce-demo.myshopify.com/" target="_blank" rel="noopener noreferrer">Visit Sauce Demo Storefront ↗</a>
+              <div class="project-overview">
+                <span class="project-overview-label">PROJECT OVERVIEW</span>
+                <p class="project-description">A hands-on workflow with Claude Code and Playwright: setting up a project, preparing a test plan, organizing test files, generating tests using Page Object Model, and correcting errors through repeated execution. These five recordings show how I guide AI tools from planning to automated test implementation.</p>
+              </div>
+              <div class="demo-video-grid">
+                <div class="demo-video-card">
+                  <video controls playsinline preload="metadata" aria-label="Project Setup &amp; Test Planning">
+                    <source src="assets/AI/01-create project and start a test plan.mp4" type="video/mp4">
+                    Your browser does not support video.
+                  </video>
+                  <h6><b>Project Setup &amp; Test Planning:</b> Setting up a Playwright project and using Claude Code to explore the storefront and prepare a test plan.</h6>
+                </div>
+                <div class="demo-video-card">
+                  <video controls playsinline preload="metadata" aria-label="Project File Structure">
+                    <source src="assets/AI/02-create a file plan.mp4" type="video/mp4">
+                    Your browser does not support video.
+                  </video>
+                  <h6><b>Project File Structure:</b> Planning the test files and their responsibilities before implementation.</h6>
+                </div>
+                <div class="demo-video-card">
+                  <video controls playsinline preload="metadata" aria-label="Test Implementation &amp; Page Objects">
+                    <source src="assets/AI/03-create tests and make them POM style.mp4" type="video/mp4">
+                    Your browser does not support video.
+                  </video>
+                  <h6><b>Test Implementation &amp; Page Objects:</b> Generating Playwright tests and organizing reusable actions with Page Object Model.</h6>
+                </div>
+                <div class="demo-video-card">
+                  <video controls playsinline preload="metadata" aria-label="Fixing Errors &amp; Re-running Tests">
+                    <source src="assets/AI/04-fix failing tests.mp4" type="video/mp4">
+                    Your browser does not support video.
+                  </video>
+                  <h6><b>Fixing Errors &amp; Re-running Tests:</b> Using Claude Code to correct test code and run the checks again.</h6>
+                </div>
+                <div class="demo-video-card">
+                  <video controls playsinline preload="metadata" aria-label="Reusable Instructions &amp; Additional Tests">
+                    <source src="assets/AI/05-create and use a skill to generate tests cases.mp4" type="video/mp4">
+                    Your browser does not support video.
+                  </video>
+                  <h6><b>Reusable Instructions &amp; Additional Tests:</b> Adding reusable testing instructions and generating additional catalog tests with Claude Code.</h6>
+                </div>
+              </div>
+              <span class="project-label">Claude Code / Playwright / TypeScript / POM</span>
             </article>
           </div>
         </div>
